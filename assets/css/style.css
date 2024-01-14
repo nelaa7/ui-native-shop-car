@@ -1,0 +1,747 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    width: auto;
+    justify-content: space-between;
+}
+
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/* #header {
+    height: 70px;
+    transition: all 0.5s;
+    z-index: 1000;
+    transition: all 0.5s;
+    background: rgba(42, 44, 57, 0.9);
+    justify-content: flex-end;
+  }
+  
+  #header.header-transparent {
+    background: transparent;
+  }
+  
+  #header.header-scrolled {
+    background: rgba(42, 44, 57, 0.9);
+  }
+  */
+/*--------------------------------------------------------------
+# navigation
+--------------------------------------------------------------*/
+
+#navbar1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 1000;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#navbar1.scrolled {
+    background: #07031A;
+}
+
+#navbar1 a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+
+}
+
+#navbar a:hover {
+    color: #FDB827;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #07031A;
+    overflow: hidden;
+    z-index: 1000;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#navbar.scrolled {
+    background: #07031A;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+
+}
+
+#navbar a:hover {
+    color: #FDB827;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+    /* Menggeser  navbar ke sisi kanan */
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navbar li {
+    margin-right: 20px;
+    /*mengatur spasi antar li*/
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content {
+    padding: 16px;
+}
+
+
+/* ...............................................
+background
+.................................................*/
+.cover-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    justify-self: normal;
+    background-image: url('../img/background/bg-1.jpg');
+    background-size: 1920px 1080px;
+    /* Membuat gambar menutupi seluruh elemen */
+    background-repeat: no-repeat;
+    /*supaya gambar tidak diulang*/
+    background-position: center;
+    /* Menempatkan gambar di tengah-tengah elemen */
+    color: #fff;
+    /* Warna teks yang kontras dengan latar belakang */
+    text-align: center;
+    padding: 250px;
+}
+
+/* produk */
+h2 {
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    color: #FDB827;
+    font-size: 75px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.row-produk {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-produk1 {
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-produk1 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+
+
+.col-produk2 {
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-produk2 {
+    background-image: url("../img/katalog/GT-R\ R34.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-produk3 {
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-produk3 {
+    background-image: url("../img/katalog/m3.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-produk4 {
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-produk4 {
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/katalog/1970-Datsun-Fairlady-240Z.jpg");
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+/* artikel */
+#artikel.artikel{
+margin-bottom: 30px;
+}
+
+.row-artikel {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-artikel {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    /* border: #000; */
+    border-style: ridge;
+    border-radius: 10px;
+    border-left: #07031A;
+    /* background-color: dimgrey; */
+    padding: 10px;
+}
+
+/* .box-artikel {
+    width: 300px;
+    height: 360px;
+    justify-content: center;
+    border: #bd0f0f;
+    border-radius: 5px;
+    background-color: #fff;
+} */
+
+.bg-artikel {
+    max-width: 100%;
+    width: 280px;
+    height: 200px;
+    background-size: cover;
+    /* background-color: dimgrey; */
+    background-image: url("../img/background/bg-2.jpg");
+    background-repeat: no-repeat;
+    text-shadow: #333;
+    border-radius: 5%;
+    box-shadow: #000;
+}
+
+.title-artikel {
+    text-align: left;
+    font-weight: bolder;
+    padding-top: 5px;
+    font-size: large;
+    color: #07031A;
+}
+
+.col-artikel a {
+    margin-top: auto;
+}
+
+.decs-artikel {
+    font-style: normal;
+    justify-content: flex-end;
+
+}
+
+
+
+/* page::produk */
+.title-katalog {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 100px;
+    font-size: 70px;
+    color: #FDB827;
+}
+
+.row-katalog {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title {
+    font-weight: bold;
+    font-variant: small-caps;
+    text-shadow: #07031A;
+    font-size: 25px;
+}
+
+.more {
+    font-size: 20px;
+    white-space: pre-warp;
+}
+
+.addcart {
+    justify-content: right;
+    display: flex;
+}
+
+.harga {
+    font-size: medium;
+    font-weight: normal;
+}
+
+.informasi {
+    text-decoration: none;
+    color: #07031A;
+}
+
+.col-katalog1 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog1 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog2 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog2 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog3 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog3 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog4 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog4 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog5 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog5 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog6 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog6 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog7 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog7 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog8 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog8 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog9 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog9 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog10 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog10 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog11 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog11 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+.col-katalog12 {
+
+    width: 100px;
+    height: 370px;
+    flex: 0 0 calc(25% - 100px);
+    margin: 10px;
+    border: #000;
+    /* border-style: ridge; */
+    border-radius: 10px;
+    /* background-color: dimgrey; */
+    padding: 5px;
+}
+
+.bg-katalog12 {
+    background-image: url("../img/katalog/rs4avant.jpg");
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* page::artikel */
+.title-berita {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 100px;
+    font-size: 70px;
+    color: #FDB827;
+}
+
+.row-berita {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-berita {
+    width: 1000px;
+    height: 300px;
+    border-color: #FDB827;
+    border-style: groove;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.judul-berita {
+    font-style: normal;
+    font-weight: 900;
+}
+
+.selengkapnya {
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #FDB827;
+}
+
+.img-berita {
+    background-image: url("../img/background/bg-1.jpg");
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+}
+
+.decs-berita {
+    font-style: normal;
+    justify-content: flex-end;
+    width: 500px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+
+/* slider galeri */
+.slider-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.slide img{
+    width: 100%;
+    height: 200px;
+    background-size: cover;  
+}
+
+
+
+/* footer */
+footer {
+    height: 200px;
+    text-align: center;
+    padding: 3px;
+    background-color: #07031A;
+    color: #FDB827;
+    margin-top: 20px;
+    
+}
+footer p {
+    margin-top: 70px;
+    justify-self: center;
+    margin-bottom: 0;
+    font-size: medium;
+    font-weight: initial;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #FDB827;
+}
