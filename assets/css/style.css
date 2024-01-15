@@ -143,32 +143,68 @@ background
 
 /* produk */
 h2 {
-    text-align: center;
+    text-align:center ;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.section-title {
-    text-align: center;
+/* .produk.container{
+    
+} */
+
+.section-title a {
     color: #FDB827;
-    font-size: 75px;
+    font-size: 50px;
     font-weight: bolder;
-    margin-top: 20px;
+    margin-top: 40px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .row-produk {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 40px;  
 }
 
-.col-produk1 {
+.col-produk {
     width: 100px;
     height: 370px;
     flex: 0 0 calc(25% - 100px);
     margin: 10px;
-    border: #000;
+    /* border: solid 1px #000; */
     /* border-style: ridge; */
-    border-radius: 10px;
+    border-radius: 4px;
     /* background-color: dimgrey; */
-    padding: 5px;
+    /* padding: 5px grey; */
+    box-shadow: 5px 5px  #e4dddd;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.col-produk:active{
+    box-shadow: #ddd8d8;
+}
+
+.col-produk p{
+    margin-top: 5px;
+}
+
+.col-produk img{
+    width: 280px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    max-width: 100%;
+}
+
+.addcart img{
+    justify-content: flex-end;
+    width: 48px;
+    height: 48px;
 }
 
 .bg-produk1 {
@@ -252,6 +288,15 @@ h2 {
 /* artikel */
 #artikel.artikel{
 margin-bottom: 30px;
+}
+
+.section-title1{
+    text-align: center;
+    color: #FDB827;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 40px;
+    text-decoration: none;
 }
 
 .row-artikel {
@@ -667,7 +712,8 @@ margin-bottom: 30px;
 
 .judul-berita {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 400;
+    font-size: 40px;
 }
 
 .selengkapnya {
@@ -678,8 +724,8 @@ margin-bottom: 30px;
     color: #FDB827;
 }
 
-.img-berita {
-    background-image: url("../img/background/bg-1.jpg");
+.img-berita1 {
+    background-image: url("../img/katalog/1970-Datsun-Fairlady-240Z.jpg");
     width: 500px;
     height: 300px;
     background-size: cover;
@@ -687,7 +733,41 @@ margin-bottom: 30px;
     border-radius: 0%;
 }
 
-.decs-berita {
+.decs-berita1 {
+    font-style: normal;
+    justify-content: flex-end;
+    width: 500px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+.img-berita2 {
+    background-image: url("../img/katalog/Toyota-AE86-2.jpg");
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+}
+
+.decs-berita2 {
+    font-style: normal;
+    justify-content: flex-end;
+    width: 500px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+.img-berita3 {
+    background-image: url("../img/katalog/mazda-rx7.jpg");
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+}
+
+.decs-berita3 {
     font-style: normal;
     justify-content: flex-end;
     width: 500px;
